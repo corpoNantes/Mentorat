@@ -90,6 +90,15 @@ Quand celui-ci est égal au nombre d’externes à attribuer au hasard, on attri
 - responsive design du formulaire: la majorité des utilisateurs seront sur portable
 - basé sur un template bootstrap: https://startbootstrap.com/themes/freelancer/
 
+## Installation
+### Base de données
+3 tables: internes, externes, spécialités
+contenu dans mentorat.sql
+
+js personnalisé dans dossier src/js :
+- formulaire: page externe
+- liste inscrit : liste des internes
+
 ## A faire:
 
 Explication de l’algorithme aux étudiants sur la page d’inscription.
