@@ -108,6 +108,7 @@ envoi auto de l’email à l’externe
 Pour l’interne:
 soit envoie d’un mail pour chaque filleul qui s’inscrit mais spam
 soit une fois le nombre max de filleul atteint et/ou une fois les inscriptions internes clôturées envoi auto d’un seul mail à l’interne avec les infos sur ses filleuls
+Tenir compte des limites d'envoie serveur
 
 Page de lecture:
 liste déroulante spé internes: mettre les spés non disponibles en rouges
@@ -115,11 +116,11 @@ désactiver la sélection des spé en rouge sur la page lecture
 développer la page de lecture des inscrits (tenir compte des externes inscrit au hasard)
 
 
-Optimisation de l’algorithme pour économiser le serveur
+Optimisation de l’algorithme pour économiser le serveur.
 Actuellement récupération des infos de la bdd dans un tableau puis parcours du tableau pour chaque condition tant que l’interne n’est pas trouvé. très consommateur de ressources.
 Plus économe niveau serveur de faire une requête SQL à chaque fois, plutôt que de faire une seul?
 Vérifier les doublons sur plus de chose que le num étudiant
 
-Mise en place d’une page de gestion : ajout, suppression, modification des tables interne et externe sans avoir à passer par phpmyadmin (penser à la table spé à mettre à jour en même tps)
+Mise en place d’une page de gestion : ajout, suppression, modification des tables interne et externe sans avoir à passer par phpmyadmin (penser à la table spé à mettre à jour en même tps).
 
 Mises à jour régulières sans recharger la page (ajax) de la liste déroulante des spés pour éviter au max la situation présentée plus haut.
