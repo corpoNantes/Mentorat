@@ -70,9 +70,9 @@ Car un autre externe à pu s’inscrire juste avant pdt le remplissage du formul
 ### Situation spéciale des attributions au hasard:
 L’attribution au hasard de l’interne ne se fera qu'à la fin, quand les inscriptions externes seront cloturées ou quand il n’y aura plus de place dispo.
 
-**Pourquoi ?** Afin d’éviter que l’externe (imaginons qu’il prenne la dernière place dispo) prenne un interne qui aurait pu convenir à un autre externe qui s’est inscrit après. 
+**Pourquoi ?** Afin d’éviter que l’externe (imaginons qu’il prenne la dernière place dispo) prenne un interne qui aurait pu convenir à un autre externe qui s’est inscrit après.
 
-**Comment ?** On tient le compte total des places dispo par spé (celui ci diminue au fur à mesure que les externes s’inscrivent). 
+**Comment ?** On tient le compte total des places dispo par spé (celui ci diminue au fur à mesure que les externes s’inscrivent).
 Quand celui-ci est égal au nombre d’externes à attribuer au hasard, on attribue les externes au hasard et on ferme la spé.
 
 
@@ -103,7 +103,7 @@ js personnalisé dans dossier src/js :
 
 Explication de l’algorithme aux étudiants sur la page d’inscription.
 
-Au niveau de l’attribution, 
+Au niveau de l’attribution,
 envoi auto de l’email à l’externe
 Pour l’interne:
 soit envoie d’un mail pour chaque filleul qui s’inscrit mais spam

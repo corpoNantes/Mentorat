@@ -79,5 +79,3 @@ for ($i=1; $i <= 45 ; $i++) {
 
 
 }
-
-print_r($_SERVER['SERVER_ADDR']);
