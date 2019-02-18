@@ -1,4 +1,5 @@
 <?php
+/*
 //page appelé par une tache cron tous les soirs
 //Appel possible uniquement par le serveur
 
@@ -16,7 +17,7 @@ if( $_SERVER['REMOTE_ADDR'] != "127.0.0.1" ){
 if( $_SERVER['REMOTE_ADDR'] != $_SERVER['SERVER_ADDR'] || $_SERVER['REMOTE_ADDR'] != "127.0.0.1" ){
     die('Accès Interdit!');
 }
-
+*/
 
 //Connexion bdd
 include_once 'connexion_bdd.php';

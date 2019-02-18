@@ -207,7 +207,7 @@ if (!empty($nom) AND !empty($prenom) AND !empty($email) AND !empty($tel) AND !em
         $req = $bdd->prepare("INSERT INTO externes(numeroEtudiant, nom, prenom, email, tel, spe, ID_interne, dispoNantes, tempsMentorat, typeContactRencontre)
         VALUES(:numeroEtudiant, :nom, :prenom, :email, :tel, :spe, :ID_interne, :dispoNantes, :tempsMentorat, :typeContactRencontre)");
         $req->execute(array(
-            'numeroEtudiant' => $numeroEtudiant,
+            'numeroEtudiant' => strtoupper($numeroEtudiant),
             'nom' => $nom,
             'prenom' => $prenom,
             'email' => $email,
@@ -285,7 +285,8 @@ if (!empty($nom) AND !empty($prenom) AND !empty($email) AND !empty($tel) AND !em
     }
     else {
       echo '<header class="masthead bg-primary text-white text-center"><div class="container"><h1 class="text-uppercase mb-0">' . $message . '</h1><hr class="star-light"></div></header>';
-    } ?>
+    }
+    if(isset($id_I)){?>
 
 
     <!-- Portfolio Grid Section -->
@@ -293,11 +294,11 @@ if (!empty($nom) AND !empty($prenom) AND !empty($email) AND !empty($tel) AND !em
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Et maintenant?</h2>
         <hr class="star-dark mb-5">
-          <p class="lead">eee</p>
-
+          <p class="lead"><?php if($id_I != -1) echo 'Ton interne est ' . htmlspecialchars($cleI['prenom']) . ' ' .  strtoupper(htmlspecialchars($cleI['nom'])); else echo 'Tu auras le nom de ton interne une fois les inscriptions closes! ;)'; if(!empty($cleI['commentaire'])) echo '<br>Commentaire: ' . htmlspecialchars($cleI['commentaire']); ?></p>
       </div>
     </section>
 
+  <?php }?>
     <footer class="footer text-center">
       <div class="container">
         <div class="row">
